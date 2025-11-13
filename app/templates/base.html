@@ -4,11 +4,12 @@
         {% if title %}
         <title>{{ title }} - Home</title>
         {% else %}
-        <title>Welome To Travle Agency</title>
+        <title>Welome To Travel Agency</title>
+        {% endif %}
     </head>
     <body>
-        <div>Travle Agency  <!-- start of the naviagtion bar -->
-            <a href="{{url_for('index.html')}}">Home</a>    <!-- creates a link to the home page of the website -->
+        <div>Travel Agency  <!-- start of the naviagtion bar -->
+            <a href="{{url_for('home.html')}}">Home</a>    <!-- creates a link to the home page of the website -->
             <a href="{{url_for('season.html')}}">Season</a> <!-- creates a link to the home page of the website -->
         </div>
         <hr>
