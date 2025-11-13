@@ -1,0 +1,17 @@
+<!DOCTYPE html> <!-- tell the programm that the doctument type is html -->
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Home</title>
+        {% else %}
+        <title>Welome To Travle Agency</title>
+    </head>
+    <body>
+        <div>Travle Agency  <!-- start of the naviagtion bar -->
+            <a href="{{url_for('index.html')}}">Home</a>    <!-- creates a link to the home page of the website -->
+            <a href="{{url_for('season.html')}}">Season</a> <!-- creates a link to the home page of the website -->
+        </div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
