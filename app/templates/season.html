@@ -1,0 +1,59 @@
+{% extends "base.html" %} <!-- links to the foundation base.html -->
+
+{% block content %}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" /> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    
+    {% if season == 'spring' %}
+        <div id="springGetaway">
+            <header>
+                <h1>Spring Getaway</h1>
+                <p>Get <strong>£50 off</strong> when you spend up to £200</p>
+                <button class="Explore Packages">Explore Packages</button>
+                <form method="POST">
+                    <button type="submit" name="back_to_home">Back To Home</button>
+                </form>
+            </header>
+        </div>
+
+    {% elif season == 'summer' %}
+        <div id="summerGateway">
+            <header>
+                <h1>Summer Getaway</h1>
+                <p>Get <strong>£50 off</strong> when you spend up to £200</p>
+                <button class="Explore Packages">Explore Packages</button>
+                <form method="POST">
+                    <button type="submit" name="back_to_home">Back To Home</button>
+                </form>
+            </header>
+        </div>
+
+    {% elif season == 'autumn' %}
+        <div id="autumnGateway">
+            <header>
+                <h1>Autumn Getaway</h1>
+                <p>Get <strong>£50 off</strong> when you spend up to £200</p>
+                <button class="Explore Packages">Explore Packages</button>
+                <form method="POST">
+                    <button type="submit" name="back_to_home">Back To Home</button>
+                </form>
+            </header>
+        </div>
+
+    {% elif season == 'winter' %}
+        <div id="winterGetaway">
+            <header>
+                <h1>Winter Getaway</h1>
+                <p>Get <strong>£50 off</strong> when you spend up to £200</p>
+                <button class="Explore Packages">Explore Packages</button>
+                <form method="POST">
+                    <button type="submit" name="back_to_home">Back To Home</button>
+                </form>
+            </header>
+        </div>
+    {% endif %}
+{% endblock %}
