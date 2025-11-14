@@ -7,16 +7,16 @@ def home():
 
 @app.route('/spring')
 def spring():
-    return render_template('season.html', title = 'Spring')
+    return render_template('season.html', season = 'spring')
 
 @app.route('/summmer')
 def summer():
-    return render_template('season.html', title = 'Summer')
+    return render_template('season.html', season = 'summer')
 
 @app.route('/autumn')
 def autumn():
-    return render_template('season.html', title = 'Autumn')
+    return render_template('season.html', season = 'autumn')
 
 @app.route('/winter')
 def winter():
-    return render_template('season.html', title = 'Winter')
+    return render_template('season.html', season = 'winter')

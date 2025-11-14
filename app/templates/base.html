@@ -10,7 +10,10 @@
     <body>
         <div>Travel Agency  <!-- start of the naviagtion bar -->
             <a href="{{url_for('home')}}">Home</a>    <!-- creates a link to the home page of the website -->
-            <a href="{{url_for('season')}}">Season</a> <!-- creates a link to the home page of the website -->
+            <a href="{{url_for('spring')}}">Spring</a>
+            <a href="{{url_for('summer')}}">Summer</a>
+            <a href="{{url_for('autumn')}}">Autumn</a>
+            <a href="{{url_for('winter')}}">Winter</a>
         </div>
         <hr>
         {% block content %}{% endblock %}
