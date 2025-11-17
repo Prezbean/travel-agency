@@ -11,7 +11,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
-        <div class="container-season">
+        <div class="container-fluid">
             <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                 <!-- Carousel indicators -->
                 <ol class="carousel-indicators">
@@ -21,6 +21,7 @@
                     <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
                 </ol>
         
+
                 <!-- Wrapper for carousel items -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -28,27 +29,37 @@
                         <div class="carousel-caption">
                             <h2>Spring - Renew & Explore</h2>
                             <p>Cherry Blossoms, City Breaks and Gentle Hikes</p>
+                            <a href="/spring" class="btn btn-primary">Discover Spring Trips</a>
                         </div>
                     </div>
+
+
                     <div class="carousel-item">
                         <img src="{{ url_for('static', filename='images/Summer.jpg') }}" class="d-block w-100">
                         <div class="carousel-caption">
                             <h2>Summer - Sun & Sea</h2>
                             <p>Golden Beaches, Sailing and Snorkeling</p>
+                            <a href="/summer" class="btn btn-primary">Discover Summer Trips</a>
                         </div>
                     </div>
+
+
                     <div class="carousel-item">
                         <img src="{{ url_for('static', filename='images/Autumn.jpg') }}" class="d-block w-100">
                         <div class="carousel-caption">
                             <h2>Autumn - Cosy & Scenic</h2>
                             <p>Forest Walks, Foodie Tours and Vineyard Stays</p>
+                            <a href="/autumn" class="btn btn-primary">Discover Autumn Trips</a>
                         </div>
                     </div>
+
+
                     <div class="carousel-item">
                         <img src="{{ url_for('static', filename='images/Winter.jpg') }}" class="d-block w-100">
                         <div class="carousel-caption">
                             <h2>Winter - Sparkle & Snow</h2>
                             <p>Ski Resorts, Northern Lights and Festive Markets</p>
+                            <a href="/winter" class="btn btn-primary">Discover Winter Trips</a>
                         </div>
                     </div>
                 </div>
