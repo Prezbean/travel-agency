@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #212529;
+  padding: 10px 20px;
+  border-bottom: 1px solid #444;
+}
+
+.navbar a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  color: #fff; 
+}
+
+.navbar-links {
+  display: flex;
+  gap: 25px; /* controls spacing between links */
+}
+
+.navbar-links a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navbar-links a:hover {
+  color: #fff;
+}
+
+.carousel-item img {
+  height: 450px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent background for readability */
+  padding: 20px;
+  border-radius: 8px;
+}
