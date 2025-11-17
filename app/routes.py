@@ -9,7 +9,7 @@ def home():
 def spring():
     return render_template('season.html', season = 'spring')
 
-@app.route('/summmer')
+@app.route('/summer')
 def summer():
     return render_template('season.html', season = 'summer')
 
