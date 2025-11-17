@@ -6,9 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" /> 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <style href="custom.css"></style>
     </head>
     
-    {% if season == 'spring'}
+    <!-- Spring Display -->
+    {% if season == 'spring' %}
         <div id="springGetaway">
             <header>
                 <h1>Spring Getaway</h1>
@@ -19,8 +21,9 @@
                 </form>
             </header>
         </div>
-
-    {% elif season == 'summer'}
+    
+    <!-- Summer Display -->
+    {% elif season == 'summer' %}
         <div id="summerGateway">
             <header>
                 <h1>Summer Getaway</h1>
@@ -32,7 +35,8 @@
             </header>
     </div>
 
-    {% elif season == 'autumn'}
+    <!-- Autumn Display -->
+    {% elif season == 'autumn' %}
         <div id="autumnGateway">
             <header>
                 <h1>Autumn Getaway</h1>
@@ -44,7 +48,8 @@
             </header>
         </div>
 
-    {% elif season == 'winter'}
+    <!-- Winter Display -->
+    {% elif season == 'winter' %}
         <div id="winterGetaway">
             <header>
                 <h1>Winter Getaway</h1>
@@ -55,5 +60,6 @@
                 </form>
             </header>
         </div>
+
     {% endif %}
 {% endblock %}
