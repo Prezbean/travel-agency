@@ -3,34 +3,38 @@
 {% block content %}    
     <body class="bg-light">
         {% if season == 'spring' %}
-            <div id="springGetaway">
-                <header>
-                    <h1>Spring Getaway</h1>
-                    <a href="{{ url_for('home') }}" class="btn btn-primary">Back To Home</a>
+            <div id="springGetaway" class="container py-5">
+                <header class="col-md-6">
+                    <h1 class="display-4 fw-normal">Spring Getaway</h1>
+                    <p class="text-muted fs-5">Blossoms, city breaks and gentle hikes.</p>
+                    <a href="{{ url_for('home') }}" class="btn btn-outline-primary">Back To Home</a>
                 </header>
             </div>
 
         {% elif season == 'summer' %}
-            <div id="summerGateway">
-                <header>
-                    <h1>Summer Getaway</h1>
-                    <a href="{{ url_for('home') }}" class="btn btn-primary">Back To Home</a>
+            <div id="summerGateway" class="container py-5">
+                <header class="col-md-6">
+                    <h1 class="display-4 fw-normal">Summer Adventure</h1>
+                    <p class="text-muted fs-5">Beaches, sunshine and watersports.</p>
+                    <a href="{{ url_for('home') }}" class="btn btn-outline-primary">Back To Home</a>
                 </header>
             </div>
 
         {% elif season == 'autumn' %}
-            <div id="autumnGateway">
-                <header>
-                    <h1>Autumn Getaway</h1>
-                    <a href="{{ url_for('home') }}" class="btn btn-primary">Back To Home</a>
+            <div id="autumnGateway" class="container py-5">
+                <header class="col-md-6">
+                    <h1 class="display-4 fw-normal">Autumn Escape</h1>
+                    <P class="text-muted fs-5">Golden forests, foodie tours and cosy cabins.</P>
+                    <a href="{{ url_for('home') }}" class="btn btn-outline-primary">Back To Home</a>
                 </header>
             </div>
 
         {% elif season == 'winter' %}
-            <div id="winterGetaway">
-                <header>
-                    <h1>Winter Getaway</h1>
-                    <a href="{{ url_for('home') }}" class="btn btn-primary">Back To Home</a>
+            <div id="winterGetaway" class="container py-5">
+                <header class="col-md-6">
+                    <h1 class="display-4 fw-normal">Winter Wonders</h1>
+                    <p class="text-muted fs-5">Skiing, northern lights and festive markets.</p>
+                    <a href="{{ url_for('home') }}" class="btn btn-outline-primary">Back To Home</a>
                 </header>
             </div>
         {% endif %}
