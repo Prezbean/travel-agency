@@ -1,14 +1,27 @@
 <!DOCTYPE html> <!-- tell the programm that the doctument type is html -->
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         {% if title %}
         <title>{{ title }} - Home</title>
         {% else %}
-        <title>Welome To Travel Agency</title>
+        <title>Welcome To Four Seasons Travel</title>
         {% endif %}
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
-        <hr>
+        <div class="navbar"> <!-- start of the naviagtion bar -->
+            <a href="{{url_for('home')}}" class="ms-5">Four Seasons Travel</a>   <!-- creates a link to the home page of the website -->
+            <div class="navbar-links me-5">
+                <a href="{{url_for('spring')}}">Spring</a>
+                <a href="{{url_for('summer')}}">Summer</a>
+                <a href="{{url_for('autumn')}}">Autumn</a>
+                <a href="{{url_for('winter')}}">Winter</a>
+            </div>
+        </div>
         {% block content %}{% endblock %}
     </body>
 </html>
