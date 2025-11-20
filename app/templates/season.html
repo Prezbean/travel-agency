@@ -1,45 +1,68 @@
 {% extends "base.html" %} <!-- links to the foundation base.html -->
 
 {% block content %}
-    <body class="bg-light">
+    <body class="bg-light"> <!-- Applies a light background to the body -->
+
+        <!-- Conditional rendering based on the 'season' variable -->
         {% if season == 'spring' %}
             <div id="springGetaway" class="container py-5">
+                <!--Spring Section-->
                 <header class="col-md-6">
+                    <img src="{{ url_for('static', filename='images/Flowers.jpg') }}" class="d-block w-100">
                     <h1 class="display-4 fw-normal">Spring Getaway</h1>
                     <p class="text-muted fs-5">Blossoms, city breaks and gentle hikes.</p>
-                    <a href="{{ url_for('home') }}" class="btn btn-outline-primary">Back To Home</a>
                 </header>
+                <body>
+                    <a href="{{ url_for('home') }}" class="btn btn-primary">Back To Home</a>
+                    <a class="btn btn-outline-primary">Explore Packages</a>
+                </body>
             </div>
 
         {% elif season == 'summer' %}
-            <div id="summerGateway" class="container py-5">
+            <div id="summerGetaway" class="container py-5">
+                <!--Summer Section-->
                 <header class="col-md-6">
+                    <img src="{{ url_for('static', filename='images/Palm Trees.jpg') }}" class="d-block w-100">
                     <h1 class="display-4 fw-normal">Summer Adventure</h1>
                     <p class="text-muted fs-5">Beaches, sunshine and watersports.</p>
-                    <a href="{{ url_for('home') }}" class="btn btn-outline-primary">Back To Home</a>
                 </header>
+                <body>
+                    <a href="{{ url_for('home') }}" class="btn btn-primary">Back To Home</a>
+                    <a class="btn btn-outline-primary">Explore Packages</a>
+                </body>
             </div>
 
         {% elif season == 'autumn' %}
-            <div id="autumnGateway" class="container py-5">
+            <div id="autumnGetaway" class="container py-5">
+                <!--Autumn Section-->
                 <header class="col-md-6">
+                    <img src="{{ url_for('static', filename='images/Warmth.jpg') }}" class="d-block w-100">
                     <h1 class="display-4 fw-normal">Autumn Escape</h1>
                     <P class="text-muted fs-5">Golden forests, foodie tours and cosy cabins.</P>
-                    <a href="{{ url_for('home') }}" class="btn btn-outline-primary">Back To Home</a>
                 </header>
+                <body>
+                    <a href="{{ url_for('home') }}" class="btn btn-primary">Back To Home</a>
+                    <a class="btn btn-outline-primary">Explore Packages</a>
+                </body>
             </div>
 
         {% elif season == 'winter' %}
             <div id="winterGetaway" class="container py-5">
+                <!--Winter Section-->
                 <header class="col-md-6">
+                    <img src="{{ url_for('static', filename='images/Lights.jpg') }}" class="d-block w-100">
                     <h1 class="display-4 fw-normal">Winter Wonders</h1>
                     <p class="text-muted fs-5">Skiing, northern lights and festive markets.</p>
-                    <a href="{{ url_for('home') }}" class="btn btn-outline-primary">Back To Home</a>
                 </header>
+                <body>
+                    <a href="{{ url_for('home') }}" class="btn btn-primary">Back To Home</a>
+                    <a class="btn btn-outline-primary">Explore Packages</a>
+                </body>
             </div>
         {% endif %}
     </body>
     <hr>
+    <!--Footer Section-->
     <footer class="bg-light text-center mt-4">
         <p class="text-muted">&copy;2025 Four Seasons Travel - Built with Flask and Bootstrap 5</p>
     </footer>

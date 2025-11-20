@@ -10,7 +10,7 @@
 .navbar a {
   color: rgba(255,255,255,0.7);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .navbar a:hover {
@@ -25,7 +25,7 @@
 .navbar-links a {
   color: rgba(255,255,255,0.7);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .navbar-links a:hover {
@@ -41,4 +41,24 @@
   background: rgba(0, 0, 0, 0.4); /* semi-transparent background for readability */
   padding: 20px;
   border-radius: 8px;
+}
+
+#springGetaway img {
+  height: 25vh;
+  object-fit: cover;
+}
+
+#summerGetaway img {
+  height: 25vh;
+  object-fit: cover;
+}
+
+#autumnGetaway img {
+  height: 25vh;
+  object-fit: cover;
+}
+
+#winterGetaway img {
+  height: 25vh;
+  object-fit: cover;
 }
