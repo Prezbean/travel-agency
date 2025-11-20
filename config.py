@@ -1,4 +1,12 @@
-import os
+import os, sys
+from pathlib import Path
+from dotenv import load_dotenv
+
+BASE_DIR = Path(__file__).resolve().parent
+load_dotenv(BASE_DIR / ".env")
+
+if getattr(sys, "frozen", False):
+    load_dotenv(Path.cwd() / ".env")
 
 class Config:
 
