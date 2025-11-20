@@ -2,7 +2,7 @@ from flask import render_template, Blueprint
 
 bp = Blueprint('main', __name__)
 
-@bp.route('/main') # Decorator to get to home page
+@bp.route('/') # Decorator to get to home page
 def home():
     return render_template('home.html', title = 'Home')
 
